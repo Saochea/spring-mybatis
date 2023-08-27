@@ -20,16 +20,16 @@ import io.kh.springmybatis.model.User;
 @RequestMapping("/api/v1/users")
 public class UserController {
 	
-	@Autowired  // when use @Autowired on this case we don't need create constructor
-	private UserMapper userMapper;
+	// @Autowired  // when use @Autowired on this case we don't need create constructor
+	// private UserMapper userMapper;
 	
 	// for response message as object
 	Map<String, Object> obj = new HashMap<>();
-/*
+
 	public UserController(UserMapper userMapper) {
 		this.userMapper = userMapper;
 	}
-*/
+
 	
 	@GetMapping
 	public List<User> getAllUsers(){
